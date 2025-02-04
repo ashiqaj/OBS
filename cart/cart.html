@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cart - BookShop</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>BookShop</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cart Page Section -->
+  <section class="cart-page">
+    <h2>Your Cart</h2>
+
+    <div class="cart-container">
+      <div class="cart-items">
+        <!-- Cart Item 1 -->
+        <div class="cart-item">
+          <img src="https://via.placeholder.com/100" alt="Book Title 1">
+          <div class="item-details">
+            <h3>Book Title 1</h3>
+            <p>Author 1</p>
+            <p>$15.99</p>
+            <div class="quantity">
+              <button>-</button>
+              <input type="number" value="1" min="1">
+              <button>+</button>
+            </div>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+
+        <!-- Cart Item 2 -->
+        <div class="cart-item">
+          <img src="https://via.placeholder.com/100" alt="Book Title 2">
+          <div class="item-details">
+            <h3>Book Title 2</h3>
+            <p>Author 2</p>
+            <p>$19.99</p>
+            <div class="quantity">
+              <button>-</button>
+              <input type="number" value="1" min="1">
+              <button>+</button>
+            </div>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <h3>Cart Summary</h3>
+        <p>Total Items: 2</p>
+        <p>Total Price: $35.98</p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 BookShop. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
