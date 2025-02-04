@@ -144,7 +144,7 @@ header nav ul li a {
   background-color: #9984d4;
   transition: 0.3s;
 }
-.book-list .book-item:hover,img:hover {
+.book-list .book-item:hover img {
   transform: scale(1.03);
   box-shadow: -1px -1px 10px black;
   transition: 0.3s;

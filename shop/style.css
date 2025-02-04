@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #caa8f5;
   min-width: 75%;
 }
 
@@ -49,47 +49,82 @@ header nav ul li a {
   margin: 3px;
 }
 
-
+.headflex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px;
+}
 .shop-page {
-  text-align: center;
-  padding: 40px 20px;
+  margin: 10px;
 }
 
 .shop-page h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-}
+  text-align: center;
+  color: #230c33;
+} 
 
-.shop-filter {
-  margin-bottom: 30px;
-}
-
-.shop-filter label {
-  font-size: 18px;
-  margin-right: 10px;
-}
-
-.shop-filter select {
-  padding: 8px 16px;
-  font-size: 16px;
-  border: 1px solid #ccc;
+.headflex .shop-filter *,.search *{
   border-radius: 5px;
+  padding: 7px 15px;
 }
 
+.headflex .shop-filter,.search label{
+  font-size: 1.01em;
+}
+
+.shop-filter select , option{
+  width: 150px;
+  font-size: 1.01em;
+  color: #230c33;
+  background: #9984d4;
+} 
+.shop-filter select:hover { 
+  background: #592e83;
+}
+.search input {
+  color: #230c33;
+  background-color: #9984d4;
+  font-size: 1.01em;
+  width: 180px;
+}
 .book-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.book-item img {
+  background-origin: content-box;
 }
 
 .book-item {
-  background-color: white;
+  background-color: #9984d4;
+  align-items: center;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: content-box;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+}
+
+.book-list .book-item:hover{
+  background-color: #592e83;
+  transition: 0.3s;
+}
+.book-list .book-item:hover .buy-button {
+  background-color: #9984d4;
+  transition: 0.3s;
+}
+.book-list .book-item:hover img {
+  transform: scale(1.03);
+  box-shadow: -1px -1px 10px black;
+  transition: 0.3s;
 }
 
 .book-item img {
@@ -100,30 +135,32 @@ header nav ul li a {
 
 .book-item h3 {
   font-size: 20px;
-  margin-top: 15px;
+  margin: 15px 0;
 }
 
 .book-item p {
   font-size: 16px;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .buy-button {
-  background-color: #ff9900;
-  color: white;
+  background-color: #592e83;
+  color: #ffffff;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .buy-button:hover {
-  background-color: #ff6600;
+  color: #592e83;
+  background-color: #230c33;
+  transition: 0.3;
 }
 
 footer {
   background-color: #333;
-  color: white;
+  color: #caa8f5;
   padding: 15px 0;
   text-align: center;
 }
@@ -136,7 +173,7 @@ footer ul {
 }
 
 footer ul li a {
-  color: white;
+  color: #caa8f5;
   text-decoration: none;
 }
 
