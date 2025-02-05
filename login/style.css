@@ -1,4 +1,4 @@
-/* Resetting some default styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,6 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Login Section */
 .login-section {
   display: flex;
   justify-content: center;
@@ -35,7 +34,6 @@ body {
   color: #333;
 }
 
-/* Input fields */
 .input-group {
   margin-bottom: 20px;
   text-align: left;
@@ -61,7 +59,6 @@ body {
   border-color: #ff9900;
 }
 
-/* Forgot Password Link */
 .forgot-password {
   text-align: right;
   margin-bottom: 20px;
@@ -77,7 +74,6 @@ body {
   text-decoration: underline;
 }
 
-/* Login Button */
 .login-btn {
   background-color: #ff9900;
   color: white;
@@ -93,7 +89,6 @@ body {
   background-color: #ff6600;
 }
 
-/* Signup Link */
 .signup-link {
   margin-top: 20px;
   font-size: 14px;
