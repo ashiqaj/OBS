@@ -9,6 +9,7 @@
 body {
   background-color: #caa8f5;
   min-width: 75%;
+  cursor: url();
 }
 
 a {
@@ -80,8 +81,14 @@ header nav ul li a {
   color: #230c33;
   background: #9984d4;
 } 
+.shop-filter select option{ 
+  appearance: none;
+}
 .shop-filter select:hover { 
   background: #592e83;
+}
+select:focus > option:a { 
+  background: #592e83 !important;
 }
 .search input {
   color: #230c33;
@@ -124,7 +131,7 @@ header nav ul li a {
 .book-list .book-item:hover img {
   transform: scale(1.03);
   box-shadow: -1px -1px 10px black;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .book-item img {
