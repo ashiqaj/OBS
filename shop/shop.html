@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/8b0736a015.js" crossorigin="anonymous"></script>
   <title>Shop - BookShop</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,14 +30,14 @@
     <h2>Our Collection</h2>
     <div class="headflex">
       <div class="shop-filter">
-        <label for="category">Category:</label>
-        <select id="category" onfocus='this.size=1;' onchange='this.size=0; this.blur();'>
-          <option value="all">All</option>
-          <option value="Science">Fiction</option>
-          <option value="Engineering">Non-Fiction</option>
-          <option value="Philosophy">Fantasy</option>
-          <option value="Mathametics">Mystery</option>
-        </select>
+        Category  <i class="fa-solid fa-angle-down"></i>
+        <div id="category-box">
+          <div class="option">All</div>
+          <div class="option">Fiction</div>
+          <div class="option">Non-Fiction</div>
+          <div class="option">Fantasy</div>
+          <div class="option">Mystery</div>
+        </div>
       </div>
       <div class="search">
         <label for="srh">Search :</label>
