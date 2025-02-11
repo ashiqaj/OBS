@@ -66,17 +66,40 @@ body {
   margin-bottom: 20px;
 }
 
-.forgot-password a {
+.forgot-password {
   font-size: 14px;
   color: #230c33;
   text-decoration: none;
 }
 
-.forgot-password a:hover {
+.forgot-password *{
+  font-size: 14px;
+  color: #230c33;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
   text-decoration: underline;
+  
 }
 
 .login-btn {
+  background-color: #592e83;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.signup-btn:hover {
+  background-color: #230c33;
+}
+
+.signup-btn {
   background-color: #592e83;
   color: white;
   padding: 12px 20px;
@@ -92,8 +115,9 @@ body {
 }
 
 .signup-link {
-  margin-top: 20px;
+  margin-top: 1rem;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .signup-link a {
@@ -102,5 +126,20 @@ body {
 }
 
 .signup-link a:hover {
+  text-decoration: underline;
+}
+
+.login-link {
+  margin-top: 1rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-link a {
+  color: #230c33;
+  text-decoration: none;
+}
+
+.login-link a:hover {
   text-decoration: underline;
 }
