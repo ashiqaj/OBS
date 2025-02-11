@@ -74,6 +74,10 @@ header nav ul li a {
   border-radius: 7px;
 }
 
+.shop-filter p {
+  display: inline-block;
+  margin-right: 10px;
+}
 #category-box {
   position: absolute;
   display: none;
