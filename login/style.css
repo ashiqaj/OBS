@@ -12,14 +12,24 @@ body {
 
 img {
   position: absolute;
-  z-index: 0;
+  z-index: 2;
+  opacity: 0.5;
 }
+
+
+#tstimg {
+  height: 100%;
+  left: 0;
+  filter: grayscale(150%);
+}
+
 .login-section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #caa8f5;
+  z-index: 1;
 }
 
 .login-container {
@@ -30,6 +40,7 @@ img {
   width: 100%;
   max-width: 400px;
   text-align: center;
+  z-index: 3;
 }
 
 .login-container h2 {
