@@ -9,6 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: white;
   min-width: 75%;
@@ -20,8 +21,8 @@ a {
 }
 
 .wrapper {
-  background: no-repeat url("Asests/images/front-cover.jpg") fixed top;
-  background-size: cover;
+  background: no-repeat url() fixed top;
+  background-size: 30%;
   background-position: center;
 }
 
@@ -34,7 +35,7 @@ header {
   align-items: center;
 }
 
-header h1:hover{
+header h1:hover {
   background-color: #230c33;
   border-radius: 7px;
   color: #9984d4;
@@ -60,19 +61,35 @@ header nav ul li a {
 
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   color: #230c33;
   text-align: center;
   padding: 130px 0;
+  gap: 150px;
 }
+
+.hero img {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  z-index: -1;
+}
+
+.hero .hero-content {
+  margin-left: 70px;
+}
+
 
 .hero h2 {
   font-size: 36px;
+  color: antiquewhite;
   margin-bottom: 10px;
 }
 
 .hero p {
+  color: antiquewhite;
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -91,6 +108,7 @@ header nav ul li a {
   background-color: #230c33;
   transition: 0.3;
 }
+
 .break {
   width: 100%;
   height: 0.5em;
@@ -98,6 +116,7 @@ header nav ul li a {
   background-color: #230c33;
   margin: 10px;
 }
+
 .featured-books {
   display: flex;
   justify-content: space-around;
@@ -139,14 +158,16 @@ header nav ul li a {
   padding: 10px;
 }
 
-.book-list .book-item:hover{
+.book-list .book-item:hover {
   background-color: #592e83;
   transition: 0.3s;
 }
+
 .book-list .book-item:hover .buy-button {
   background-color: #9984d4;
   transition: 0.3s;
 }
+
 .book-list .book-item:hover img {
   transform: scale(1.03);
   box-shadow: -1px -1px 10px black;
