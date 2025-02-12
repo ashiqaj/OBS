@@ -7,9 +7,13 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background: #f4f4f4;
 }
 
+img {
+  position: absolute;
+  z-index: 0;
+}
 .login-section {
   display: flex;
   justify-content: center;

@@ -203,6 +203,9 @@ footer {
   color: #caa8f5;
   padding: 15px 0;
   text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 footer ul {
