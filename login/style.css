@@ -1,31 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&display=swap');
 
 * {
+  font-family: Playfair Display;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background-color: white;
+  min-width: 75%;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 img {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
+header {
+  background-color: #592e83;
+  color: white;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1:hover {
+  background-color: #230c33;
+  border-radius: 7px;
+  color: #9984d4;
+  transition: 0.3;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li a:hover {
+  color: #9984d4;
+  background-color: #230c33;
+  transition: 0.3;
+}
+
+header nav ul li a {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 3px;
+}
 
 #tstimg {
   height: 100%;
+  top: 0;
   left: 0;
-  filter: grayscale(150%);
+  filter: hue-rotate(237deg);
 }
 
 .login-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
   background-color: #caa8f5;
@@ -156,5 +199,28 @@ img {
 }
 
 .login-link a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: #caa8f5;
+  padding: 15px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+footer ul li a {
+  color: #caa8f5;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
   text-decoration: underline;
 }
