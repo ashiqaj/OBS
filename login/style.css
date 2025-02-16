@@ -81,7 +81,7 @@ header nav ul li a {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   text-align: center;
   z-index: 3;
 }
@@ -105,7 +105,7 @@ header nav ul li a {
 }
 
 .input-group input {
-  width: 100%;
+  width: 93%;
   padding: 10px;
   font-size: 16px;
   background-color: #caa8f5 !important;
